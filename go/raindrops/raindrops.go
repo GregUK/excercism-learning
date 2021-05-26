@@ -16,7 +16,7 @@ func Convert(num int) string {
 		output += "Plong"
 	}
 	if output == "" {
-		output = strconv.Itoa(num)
+		return strconv.Itoa(num)
 	}
 
 	return output

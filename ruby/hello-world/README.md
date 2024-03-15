@@ -14,22 +14,28 @@ The objectives are simple:
 
 If everything goes well, you will be ready to fetch your first real exercise.
 
-## Running the tests
+* * * *
 
-To run the tests run the command `go test` from within the exercise directory.
+For installation and learning resources, refer to the
+[Ruby resources page](http://exercism.io/languages/ruby/resources).
 
-If the test suite contains benchmarks, you can run these with the `--bench` and `--benchmem`
-flags:
+For running the tests provided, you will need the Minitest gem. Open a
+terminal window and run the following command to install minitest:
 
-    go test -v --bench . --benchmem
+    gem install minitest
 
-Keep in mind that each reviewer will run benchmarks on a different machine, with
-different specs, so the results from these benchmark tests may vary.
+If you would like color output, you can `require 'minitest/pride'` in
+the test file, or note the alternative instruction, below, for running
+the test file.
 
-## Further information
+Run the tests from the exercise directory using the following command:
 
-For more detailed information about the Go track, including how to get help if
-you're having trouble, please visit the exercism.io [Go language page](http://exercism.io/languages/go/resources).
+    ruby hello_world_test.rb
+
+To include color from the command line:
+
+    ruby -r minitest/pride hello_world_test.rb
+
 
 ## Source
 

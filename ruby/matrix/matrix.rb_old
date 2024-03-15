@@ -1,0 +1,15 @@
+class Matrix
+  attr_accessor :matrix
+
+  def initialize(matrix)
+    @matrix = matrix.split(%r{\n}).map! { |a| a.split(" ").map(&:to_i)}
+  end
+
+  def rows
+    self.matrix
+  end
+  
+  def columns
+    self.matrix.transpose
+  end
+end
